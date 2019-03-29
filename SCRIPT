@@ -1,0 +1,239 @@
+gg.toast('Galaxy of Heroes')
+print('SWGOH')
+--Game guardian detection
+if gg.BUILD < 10960 then
+print('The current gameguardian version is obsolete, minimum version required: 8.60.0')
+goto update
+end
+if gg.isVisible(true) then
+gg.setVisible(false)
+end
+gg.clearResults()
+goto START
+
+::START::
+
+menu = gg.choice({'Vader','Luke','Emperor','Boba Fett','Mace Windu','Endurance','Home One','Executrix','Bastila Shan','Grand Master Yoda','Sentinal','Fulcrum','EXIT'},nil,'Select the one you prefer!')
+
+if menu == 1 then goto Vader end
+if menu == 2 then goto Luke end
+if menu == 3 then goto Emperor end
+if menu == 4 then goto Boba end
+if menu == 5 then goto Mace end
+if menu == 6 then goto Endurance end
+if menu == 7 then goto Home end
+if menu == 8 then goto Executrix end
+if menu == 9 then goto Bastila end
+if menu == 10 then goto Yoda end
+if menu == 11 then goto Sentinal end
+if menu == 12 then goto Fulcrum end
+if menu == nil then print('Fatal error ;) ')  end
+goto noselect
+
+::Vader::
+gg.searchNumber('33160;128;2375', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Luke::
+gg.searchNumber('16902;146;2716', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Emperor::
+gg.searchNumber('14537;148;1825', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Boba::
+gg.searchNumber('19509;146;2334', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Mace::
+gg.searchNumber('24544;150;1936', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Endurance::
+gg.searchNumber('141;6620', gg.TYPE_DWORD)
+f=gg.getResults(2)
+f[1].value = '3000'
+f[1].freeze = true
+f[1].freezeType = gg.FREEZE_NORMAL
+f[2].value = '100000'
+f[2].freeze = true
+f[2].freezeType = gg.FREEZE_NORMAL
+print('Replace the search number values with your character stats ie health speed & damage : ', gg.addListItems(f))
+gg.toast('College project script')
+goto sdone
+
+
+::Home::
+gg.searchNumber('125;1647', gg.TYPE_DWORD)
+f=gg.getResults(2)
+f[1].value = '3000'
+f[1].freeze = true
+f[1].freezeType = gg.FREEZE_NORMAL
+f[2].value = '100000'
+f[2].freeze = true
+f[2].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(f))
+gg.toast('College project script')
+goto sdone
+
+
+::Executrix::
+gg.searchNumber('140;4934', gg.TYPE_DWORD)
+f=gg.getResults(2)
+f[1].value = '3000'
+f[1].freeze = true
+f[1].freezeType = gg.FREEZE_NORMAL
+f[2].value = '100000'
+f[2].freeze = true
+f[2].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(f))
+gg.toast('College project script')
+goto sdone
+
+
+::Bastila::
+gg.searchNumber('38609;136;2316', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Yoda::
+gg.searchNumber('35916;193;2705', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Sentinal::
+gg.searchNumber('8229;139;1072', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+::Fulcrum::
+gg.searchNumber('23717;149;2785', gg.TYPE_DWORD)
+t=gg.getResults(3)
+t[1].value = '100000'
+t[1].freeze = true
+t[1].freezeType = gg.FREEZE_NORMAL
+t[2].value = '3000'
+t[2].freeze = true
+t[2].freezeType = gg.FREEZE_NORMAL
+t[3].value = '100000'
+t[3].freeze = true
+t[3].freezeType = gg.FREEZE_NORMAL
+print('Script done. Replace the search number values with your character stats ie health speed & damage if the script has failed : ', gg.addListItems(t))
+gg.toast('College project script')
+goto sdone
+
+
+
+::sdone::
+gg.toast('!!What a clanker!!')
+gg.toast('For educational purposes only!')
+os.exit()
+
+::noselect::
+print('You have not selected anything.')
+
+::update::
+print('Update GameGuardian')
+gg.toast('Current version not supported [MAY BE inacurrate info!]')
