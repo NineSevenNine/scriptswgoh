@@ -2,7 +2,7 @@ gg.toast('Galaxy of Heroes')
 print('SWGOH')
 --Game guardian detection
 if gg.BUILD < 10960 then
-print('The current gameguardian version is obsolete, minimum version required: 8.60.0')
+print('game guardian minimum version requirement: 8.60.0')
 goto update
 end
 if gg.isVisible(true) then
